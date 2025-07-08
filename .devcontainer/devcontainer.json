@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/python",
   "postCreateCommand": {
     "postCreateCommand": "pip3 install -r requirements.txt",
     "jupyterlab": "mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
