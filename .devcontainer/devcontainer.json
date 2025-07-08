@@ -1,8 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python",
   "features": {
-    "ghcr.io/devcontainers/features/jupyter:1": {
-      "lab": true  // enables JupyterLab
+    "ghcr.io/devcontainers/features/python:1": {
+      "installJupyterlab": true
     }
   },
   "postCreateCommand": "pip3 install -r requirements.txt && mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
