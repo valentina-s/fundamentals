@@ -5,7 +5,7 @@
       "installJupyterlab": true
     }
   },
-  "postCreateCommand": "pip3 install -r requirements.txt && mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
+  "postCreateCommand": "pip3 install jupyterlab && pip3 install -r requirements.txt && mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
   "hostRequirements": {
     "cpus": 2
   },
