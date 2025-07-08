@@ -1,9 +1,9 @@
 {
-  "image": "quay.io/pangeo/pangeo-notebook:2024.07.08",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "postCreateCommand": {
     "postCreateCommand": "pip3 install -r requirements.txt",
     "jupyterlab": "mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
-    "vscode": "mkdir ${containerWorkspaceFolder}/.vscode && cp ${containerWorkspaceFolder}/.devcontainer/scipy2024/tasks.json ${containerWorkspaceFolder}/.vscode/tasks.json"
+    "vscode": "mkdir ${containerWorkspaceFolder}/.vscode && cp ${containerWorkspaceFolder}/.devcontainer/tasks.json ${containerWorkspaceFolder}/.vscode/tasks.json"
   },
   "hostRequirements": {
     "cpus": 2
