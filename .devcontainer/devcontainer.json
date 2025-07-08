@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "installJupyterlab": true
