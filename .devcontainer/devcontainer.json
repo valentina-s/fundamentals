@@ -1,10 +1,11 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python",
-  "postCreateCommand": {
-    "postCreateCommand": "pip3 install -r requirements.txt",
-    "jupyterlab": "mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
-    "vscode": "mkdir ${containerWorkspaceFolder}/.vscode && cp ${containerWorkspaceFolder}/.devcontainer/tasks.json ${containerWorkspaceFolder}/.vscode/tasks.json"
+  "features": {
+    "ghcr.io/devcontainers/features/jupyter:1": {
+      "lab": true  // enables JupyterLab
+    }
   },
+  "postCreateCommand": "pip3 install -r requirements.txt && mkdir /home/jovyan/.jupyter && cp ${containerWorkspaceFolder}/.devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py",
   "hostRequirements": {
     "cpus": 2
   },
